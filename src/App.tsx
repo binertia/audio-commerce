@@ -1,16 +1,21 @@
 //import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 //import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
+import React from "react";
 import { createRoot } from "react-dom/client";
 
+import Navbar from "./navbar";
 import MainPage from "./Main";
+import { GlobalStyles } from "./Global";
 
 const App = () => {
   return (
-    <div>
+    <>
+      <GlobalStyles />
+      <Navbar />
       <h1>Hello World</h1>
+      //route after here
       <MainPage />
-    </div>
+    </>
   );
 };
 
