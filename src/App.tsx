@@ -13,6 +13,26 @@ const App = () => {
       <GlobalStyles />
       <Navbar />
       <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
+      <h1>Hello World</h1>
       //route after here
       <MainPage />
     </>
