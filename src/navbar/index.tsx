@@ -8,14 +8,14 @@ export default function Navbar() {
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        // if scroll down hide the navbar
+        // hide
         setShow(true);
       } else {
-        // if scroll up show the navbar
+        // show
         setShow(false);
       }
 
-      // remember current page location to use in the next move
+      // stored current;
       setLastScrollY(window.scrollY);
     }
   };
@@ -32,14 +32,16 @@ export default function Navbar() {
   }, [lastScrollY]);
   return (
     <NavStyle className={`active ${show && "nav-hide"}`}>how fjaosdfj</NavStyle>
+    //nav-hide class has own css in Global.tsx
   );
 }
 
 const NavStyle = styled.nav`
-  height: 90px;
+  height: 5.625rem;
   width: 100%;
   top: 0;
   text-align: center;
   position: fixed;
+  transition: 0.5s ease-in-out;
   background: blue;
 `;

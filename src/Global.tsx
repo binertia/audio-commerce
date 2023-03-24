@@ -25,10 +25,35 @@ export const GlobalStyles = createGlobalStyle`
     box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .08);
     position: fixed;
     top: -80px;
-    transition: 0.3s linear;
+    transition: 0.3s ease-in-out;
   }
 
   :root {
-    --bg-color: yellow;
+    //color
+    --black : hsl(0, 0%, 6%);
+    --grey : hsl(0, 0%, 94.5%);
+    --off-white: hsl(0, 0%, 98.0392156862745%);
+    --white: hsl(0, 0%, 100%);
+    --peach: hsl(21.35593220338983, 93.65079365079364%, 75.29411764705883%);
+    --orange: hsl(21.54929577464788, 64.54545454545456%, 56.86274509803921%);
+
+    //font
+    --text: 0.9375rem;
+    --price: 1.125rem;
+    --link: 0.8125rem;
+    
+      //phone ::
+    --ph-hero: bold 2rem;
+    --ph-header: bold 1.75rem;
+    --ph-topic: bold 1.5rem;
+
+      //tablet ::
+    --tl-hero: bold 3.5rem;
+    --tl-header: bold 2.5rem;
+    --tl-topic: bold 2rem;
+    --tl-product: bold 1.75rem;
+
+
+
   }
 `;
