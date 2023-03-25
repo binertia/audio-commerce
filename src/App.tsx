@@ -6,34 +6,15 @@ import { createRoot } from "react-dom/client";
 import Navbar from "./navbar";
 import MainPage from "./main";
 import { GlobalStyles } from "./Global";
+import Heroes from "./main/product/default/heroes";
 
 const App = () => {
   return (
     <>
       <GlobalStyles />
       <Navbar />
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      <h1>Hello World</h1>
-      //route after here
+      <Heroes />
+      //route after here //
       <MainPage />
     </>
   );
