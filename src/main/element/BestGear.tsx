@@ -3,9 +3,11 @@ import manPic from "../../assets/shared/desktop/image-best-gear.jpg";
 
 export default function BestGear() {
   return (
-    <div className="padding-r-l">
+    <Wrapper className="padding-r-l">
       <ImageBestGear src={manPic} />
-      <Head>Bringing you the best audio gear</Head>
+      <Head>
+        Bringing you the <Highlight> best</Highlight> audio gear
+      </Head>
       <p>
         Located at the heart of New York City, Audiophile is the premier store
         for high end headphones, earphones, speakers, and audio accessories. We
@@ -14,7 +16,7 @@ export default function BestGear() {
         to meet some of the fantastic people who make Audiophile the best place
         to buy your portable audio equipment.
       </p>
-    </div>
+    </Wrapper>
   );
 }
 
@@ -25,4 +27,12 @@ const ImageBestGear = styled.img`
 
 const Head = styled.div`
   font: var(--ph-header);
+`;
+
+const Highlight = styled.span`
+  color: var(--orange);
+`;
+
+const Wrapper = styled.div`
+  text-align: center;
 `;
