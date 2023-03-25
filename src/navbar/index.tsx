@@ -57,4 +57,5 @@ const NavStyle = styled.nav`
   transition: 0.5s ease-in-out;
   background: var(--black);
   padding: 6.85%;
+  z-index: 2;
 `;

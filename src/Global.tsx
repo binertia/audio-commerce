@@ -27,8 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     top: -80px;
     transition: 0.3s ease-in-out;
   }
-  .padding {
-    padding :14%;
+  .padding-r-l {
+    padding-left :6.85%;
+    padding-right:6.85%;
   }
 
   :root {
