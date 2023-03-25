@@ -14,7 +14,7 @@ export const GlobalStyles = createGlobalStyle`
     body {
       margin: 0;
       background: var(--bg-color);
-      font-family: 'Manrope', sans-serif;
+      font-family: var(--fam);
       color: black;
     }
   .nav-hide {
@@ -27,6 +27,9 @@ export const GlobalStyles = createGlobalStyle`
     top: -80px;
     transition: 0.3s ease-in-out;
   }
+  .padding {
+    padding :14%;
+  }
 
   :root {
     //color
@@ -38,22 +41,28 @@ export const GlobalStyles = createGlobalStyle`
     --orange: hsl(21.54929577464788, 64.54545454545456%, 56.86274509803921%);
 
     //font
-    --text: 0.9375rem;
-    --price: 1.125rem;
-    --link: 0.8125rem;
+    --fam: 'Manrope', sans-serif;
+
+    --text: 500 0.9375rem var(--fam);
+    --price: bold 1.125rem var(--fam);
+    --link: bold 0.8125rem var(--fam);
     
       //phone ::
-    --ph-hero: bold 2rem;
-    --ph-header: bold 1.75rem;
-    --ph-topic: bold 1.5rem;
+    --ph-hero: bold 2rem var(--fam);
+    --ph-header: bold 1.75rem var(--fam);
+    --ph-topic: bold 1.5rem var(--fam);
 
       //tablet ::
-    --tl-hero: bold 3.5rem;
-    --tl-header: bold 2.5rem;
-    --tl-topic: bold 2rem;
-    --tl-product: bold 1.75rem;
+    --tl-hero: bold 3.5rem var(--fam);
+    --tl-header: bold 2.5rem var(--fam);
+    --tl-topic: bold 2rem var(--fam);
+    --tl-product: bold 1.75rem var(--fam);
 
-
-
+      //desktop ::
+    --dt-hero: bold 3.5rem var(--fam);
+    --dt-header: bold 2.5rem var(--fam);
+    --dt-topic: bold 2rem var(--fam);
+    --dt-product: bold 2.5rem var(--fam);
+    --dt-suggest-product: bold 1.5rem var(--fam);
   }
 `;

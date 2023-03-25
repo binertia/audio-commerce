@@ -4,7 +4,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 
 import Navbar from "./navbar";
-import MainPage from "./Main";
+import MainPage from "./main";
 import { GlobalStyles } from "./Global";
 
 const App = () => {
