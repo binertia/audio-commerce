@@ -4,7 +4,7 @@ export default function Heroes() {
   return (
     <HeroWrapper className="padding-r-l">
       <div>NEW PRODUCT</div>
-      <div>XX99 Mark II HeadphoneS</div>
+      <HeroMain>XX99 Mark II HeadphoneS</HeroMain>
       <div>
         Experience natural, lifelike audio and exceptional build quality made
         for the passionate music enthusiast.
@@ -15,5 +15,11 @@ export default function Heroes() {
 }
 
 const HeroWrapper = styled.div`
-  background-color: black;
+  letter-spacing: 0.2rem;
+  background-color: yellow;
+  color: var(--off-white);
+`;
+
+const HeroMain = styled.div`
+  font: var(--ph-hero);
 `;
