@@ -35,7 +35,7 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     //color
     --black : hsl(0, 0%, 6%);
-    --grey : hsl(0, 0%, 94.5%);
+    --grey : #b8b8b8; 
     --off-white: hsl(0, 0%, 98.0392156862745%);
     --white: hsl(0, 0%, 100%);
     --peach: hsl(21.35593220338983, 93.65079365079364%, 75.29411764705883%);

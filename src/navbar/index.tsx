@@ -58,4 +58,13 @@ const NavStyle = styled.nav`
   background: var(--black);
   padding: 6.85%;
   z-index: 2;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 2px;
+    background-color: #8d8d8d;
+  }
 `;

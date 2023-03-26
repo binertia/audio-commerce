@@ -6,7 +6,7 @@ import { createRoot } from "react-dom/client";
 import Navbar from "./navbar";
 import MainPage from "./main";
 import { GlobalStyles } from "./Global";
-import Heroes from "./main/product/default/heroes";
+import Heroes from "./main/product/default/Heroes";
 
 const App = () => {
   return (
@@ -14,7 +14,6 @@ const App = () => {
       <GlobalStyles />
       <Navbar />
       <Heroes />
-      //route after here //
       <MainPage />
     </>
   );
