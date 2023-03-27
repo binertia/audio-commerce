@@ -1,8 +1,23 @@
 import styled from "styled-components";
+import fetchProduct from "./fetchProduct";
+import useProduct from "./useProduct";
 
 export default function productParams() {
   //array.length is 6; 0 - 5 index 
   //linked by data[i].slug ex. [slug: "xx99-mark-one-headphones"]
+
+  const {data} = useProduct();
+  const results = useQuery(["details", data], fetchProduct);
+
+  if (results.isLoading) {
+    return (
+      <div className="loading-pane">
+        <h2 className="loader">🌀</h2>
+      </div>
+    );
+  }
+
+  const pet = results.data.pets[0];
   return (
     <div>
       <button>Go back</button>

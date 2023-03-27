@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import Navbar from "./navbar";
 import MainPage from "./main";
 import { GlobalStyles } from "./Global";
+import ProductCatalogue from "./product-params/productCatalogue";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -15,11 +16,11 @@ const queryClient = new QueryClient({
 });
 
 const App = () => {
-  fetch("/data/data.json").then((data) => console.log(data.json()));
   return (
     <QueryClientProvider client={queryClient}>
       <GlobalStyles />
       <Navbar />
+      <ProductCatalogue />
       <MainPage />
     </QueryClientProvider>
   );
