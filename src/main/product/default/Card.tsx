@@ -6,7 +6,13 @@ export default function Card() {
     <div className="padding-r-l">
       <CardWrapper>
         <SvgCard>
-          <svg width="944" height="944" xmlns="http://www.w3.org/2000/svg">
+          <svg
+            preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 1500 1500" //change viewBox;
+            width="944"
+            height="944"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <g stroke="#FFF" fill="none" fill-rule="evenodd" opacity=".202">
               <circle cx="472" cy="472" r="235.5" />
               <circle cx="472" cy="472" r="270.5" />
@@ -29,14 +35,15 @@ export default function Card() {
 
 const SvgCard = styled.div`
   position: absolute;
-  width: 10px;
-  padding: 10%;
+  top: -20%;
+  left: calc(100% - 450px);
+  z-index: -1;
 `;
 
 const ImgContainer = styled.img`
-  position: absolute;
-  top: 0;
-  width: 100px;
+  position: relative;
+  width: 195px;
+  padding: 10%;
 `;
 
 const CardWrapper = styled.div`
@@ -53,6 +60,7 @@ const CardWrapper = styled.div`
   background-color: var(--orange);
   width: 100%;
   text-align: center;
+  z-index: -2;
 `;
 
 const HeadCard = styled.div`
