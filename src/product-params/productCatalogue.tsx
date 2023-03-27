@@ -7,10 +7,11 @@ export default function ProductCatalogue() {
   /* if 2 go to speakers*/
   /* if 3 go to earphones*/
   //get all index with data[i].category: "earphones" , "headphones", "speakers"
+  //filter.map;
   /* [...data]*/
   return (
     <div>
-      <div>(true || false):new </div>
+      <div>NewProduct</div><div>(true || false):new </div>
       <div>uppercase <= string : name</div>
       <div>string : description</div>
       <div>see product button</div>

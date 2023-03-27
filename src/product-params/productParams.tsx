@@ -19,9 +19,12 @@ export default function productParams() {
       //
       <div>2x Headphone Jack</div>
       <div>... includes[quantity : number, item : string]:[]array</div>
-      <div></div>
-      <div></div>
-      <div></div>
+      //<!--array of includes -->
+      <div>[].gallery.{first, second, third}.{desktop} x3 item</div>
+      <div>YOU MAY ALSO LIKE</div>
+      <div>[].others[...].image.desktop </div>
+      <div>[].others[...].name</div>
+      <div>SeeProduct : contain slug as value</div>
     </div>
   );
 }
