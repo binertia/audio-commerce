@@ -12,12 +12,11 @@ export default function productParams() {
   if (results.isLoading) {
     return (
       <div className="loading-pane">
-        <h2 className="loader">🌀</h2>
+        <h2 className="loader">Loading ..</h2>
       </div>
     );
   }
 
-  const pet = results.data.pets[0];
   return (
     <div>
       <button>Go back</button>
