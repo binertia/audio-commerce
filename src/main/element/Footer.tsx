@@ -16,13 +16,13 @@ export default function Footer() {
           </svg>
         </SvgWrapper>
         <NavBar />
-        <p>
+        <FooterText>
           Audiophile is an all in one stop to fulfill your audio needs. We're a
           small team of music lovers and sound specialists who are devoted to
           helping you get the most out of personal audio. Come and visit our
           demo facility - we’re open 7 days a week.
-        </p>
-        <p>Copyright 2021. All Rights Reserved</p>
+        </FooterText>
+        <FooterText>Copyright 2021. All Rights Reserved</FooterText>
         <SocialLink />
       </Wrapper>
     </>
@@ -41,4 +41,8 @@ const Wrapper = styled.div`
 const SvgWrapper = styled.div`
   margin-top: 10px;
   margin-bottom: 10px;
+`;
+
+const FooterText = styled.p`
+  color: var(--grey);
 `;

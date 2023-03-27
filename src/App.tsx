@@ -1,21 +1,27 @@
-//import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 //import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import React from "react";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { createRoot } from "react-dom/client";
-
 import Navbar from "./navbar";
 import MainPage from "./main";
 import { GlobalStyles } from "./Global";
-import Heroes from "./main/product/default/Heroes";
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: Infinity,
+      cacheTime: Infinity,
+    },
+  },
+});
 
 const App = () => {
+  fetch("/data/data.json").then((data) => console.log(data.json()));
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <GlobalStyles />
       <Navbar />
-      <Heroes />
       <MainPage />
-    </>
+    </QueryClientProvider>
   );
 };
 

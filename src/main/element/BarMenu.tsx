@@ -6,7 +6,7 @@ import MenuLink from "./MenuLink";
 
 export default function BarMenu() {
   return (
-    <div className="padding-r-l">
+    <BarMenuStyle className="padding-r-l">
       <MenuBackdrop>
         <BarMenuChild src={HeadphoneThumbnail} alt="headphone" />
         <ThumbnailName>HeadPhones</ThumbnailName>
@@ -22,9 +22,13 @@ export default function BarMenu() {
         <ThumbnailName>Earphone</ThumbnailName>
         <MenuLink text={"shop"} link={""} />
       </MenuBackdrop>
-    </div>
+    </BarMenuStyle>
   );
 }
+
+const BarMenuStyle = styled.div`
+  padding-top: 50px;
+`;
 
 const BarMenuChild = styled.img`
   height: 110px;

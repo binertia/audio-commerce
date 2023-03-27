@@ -31,6 +31,9 @@ export const GlobalStyles = createGlobalStyle`
     padding-left :6.85%;
     padding-right:6.85%;
   }
+  .padding-b {
+    padding-bottom:120px;
+  }
 
   :root {
     //color

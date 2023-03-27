@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import CardPicOne from "../../../assets/home/desktop/image-speaker-zx9.png";
+import SecondCard from "./SecondCard";
+import SeeProductButtonDark from "./SeeProductButtonDark";
 
 export default function Card() {
   return (
-    <div className="padding-r-l">
+    <CardStyle className="padding-r-l padding-b">
       <CardWrapper>
         <SvgCard>
           <svg
@@ -27,11 +29,19 @@ export default function Card() {
           Upgrade to premium speakers that are phenomenally built to deliver
           truly remarkable sound.
         </TextCard>
-        <SeeProductButtonDark>SEE PRODUCT</SeeProductButtonDark>
+        <SeeProductButtonDark />
       </CardWrapper>
-    </div>
+      <SecondCard />
+    </CardStyle>
   );
 }
+
+const CardStyle = styled.div`
+  height: 1520px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
 
 const SvgCard = styled.div`
   position: absolute;
@@ -73,21 +83,6 @@ const TextCard = styled.p`
   font: var(--text);
   color: var(--white);
   width: 100%;
-`;
-
-const SeeProductButtonDark = styled.button`
-  width: 160px;
-  height: 48px;
-  border-radius: 0;
-  border: none;
-  color: var(--black);
-  font: var(--link);
-  background-color: var(--white);
-  transition: 90ms ease-in-out;
-  &:hover {
-    background-color: var(--black);
-    color: var(--white);
-  }
 `;
 
 const HeroText = styled.div`
